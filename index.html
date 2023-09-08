@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8e7139781f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contain">
+        <div class="box"><h1 class="text" data-testid="slackUserName">Timothy Abiola</h1></div>
+        
+        <div class="box main">
+            <div class="abs"><img src="tobi.jpg" alt="Timothy Abiola" data-testid="slackDisplayImage"/></div>
+            <div class="below">
+                <h2 id="day" data-testid="currentDayOfTheWeek"></h2>
+                <p id="time" data-testid="currentUTCTime"></p>
+                <div class="h-level">
+                    <h1>Track:</h1>
+                    <h1 data-testid="myTrack">Frontend</h1>
+                </div>
+                <div>
+                    <button class="gitbtn" onclick="display()" data-testid=“githubURL”>GitHub Repository <i class="fa-brands fa-github"></i></button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

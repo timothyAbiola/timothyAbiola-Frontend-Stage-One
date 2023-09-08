@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* main container of the card */
+.container{
+    margin: 100px auto;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.275);
+}
+.contain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/* image holder */
+.abs{
+    position: absolute;
+    top: 140px;
+    left: 80px;
+}
+img{
+    width: 250px;
+    border-radius: 100%;
+}
+/* top box */
+.box{
+    height: 300px;
+    background-color: white;
+}
+.text{
+    text-align: center;
+    margin-top: 50px;
+    color: green;
+}
+/* bottom box */
+.main{
+    background-color: green;
+    color: white;
+}
+.below{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.h-level{
+    text-align: center;
+}
+/* button styles */
+.gitbtn{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+.gitbtn::before{
+    content: "";
+    width: 0px;
+    transition: all 0.2s linear;
+    position: absolute;
+    left: 0px;
+    background-color: black;
+    bottom: 0px;
+    height: 3px;
+}
+.gitbtn:hover::before{
+    width: 100%;
+}
